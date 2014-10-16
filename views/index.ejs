@@ -6,9 +6,11 @@
   <body>
     <!-- action is the URL we send our data to -->
     <!-- method is the HTTP verb (e.g., GET, POST) -->
+    <h1>Welcome to OMDB</h1>
     <form action="/search" method="GET">
-      <input type="text" name="movieTitle">
+      <input type="text" name="movieTitle" autofocus>
       <input type="submit">
     </form>
+    <a href="results">My Movies</a>
   </body>
 </html>

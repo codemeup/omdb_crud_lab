@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Details</title>
+  </head>
+    <form action="/myMovies" method="POST">
+      <input type="hidden" value="<%=aMovie.Title%>" name="aMovie[title]">
+      <input type="submit" value="Favorite list?">
+    </form>
+  <body>
+    <img src="<%=aMovie.Poster%>">
+    <ul>
+    <% for (key in aMovie) {%>
+    <%= key %> : <%= aMovie[key] %>
+    <br>
+    <% } %>
+    </ul>
+  </body>
+</html>

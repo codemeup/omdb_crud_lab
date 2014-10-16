@@ -1,12 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Movie Search Results</title>
+    <title>myMovies</title>
   </head>
   <body>
     <ul>
       <!-- Loop over all the films in movieList -->
-      <% movieList.forEach(function (film) {%>
+      
+      <%=favorites.forEach(function(){
+
+      {%>
 
       <!-- Only show the results that are movies -->
       <!-- (i.e., do not show TV shows) -->
